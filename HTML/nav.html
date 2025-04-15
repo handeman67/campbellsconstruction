@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        nav {
+            margin: 0 auto;
+            background: #0005;
+            max-height: 80px;
+            max-width: 800px;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            flex-direction: row;
+            background: #0005;
+            text-align: center;
+            text-justify: center;
+            width:100%;
+        }
+        .navLinks {
+                display: grid;
+                grid-row: 1fr, auto;
+                height: 80px;
+position: relative;
+            left: -80svw;
+            flex-direction: column;
+            list-style: none;
+ background: #0005;
+            margin: 0;
+            padding: 0;
+            transition: left 1.2s ease-in-out;
+
+            }
+       
+
+        .sidenav-trigger {
+            display: block;
+            font-size: 2em;
+            padding: 0.5em;
+
+        }
+
+        li {
+            flex-grow: 1;
+            background: #0005;
+            padding: 1vmax;
+
+        }
+
+        li:hover {
+            border: 1px solid khaki;
+
+        }
+
+        .navheader {
+            --fontsz: 2.2vmax;
+            --pos: calc(50% / var(--fontsz)*5);
+
+            position: relative;
+            left: var(--pos);
+            top: 5svh;
+            font-size: var(--fontsz);
+        }
+
+        label {
+            display: grid;
+            place-items: center;
+            border: 1px solid khaki;
+
+            max-height: 8vmax;
+            width: 5em;
+            text-decoration: none;
+            color: khaki;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        #sdnav {
+            display: none;
+        }
+
+        .sdlabel {
+            width: 100px;
+            height: 100px;
+        }
+
+        @media only screen and (max-width: 400px) {
+            .navLinks {
+            display: flex;
+            
+            height: 50vh;
+           
+
+        }
+
+            li {
+                grid-row: 1;
+            }
+
+            .sdnav {
+                display: none;
+            }
+        }
+    </style>
+
+    <nav class="nav " role="navigation">
+        <div class="nav-wrapper container">
+            <label class="sdlabel" for="sdnav"> &#9776;</label>
+            <input type="checkbox" name="sdnav" id="sdnav">
+
+            <ul class="navLinks">
+                <li class="navlink main_page"><a id="main_page" href="#Main_Page" onclick=mainPage(this)>Main
+                        Page</a></li>
+                <li class="navlink credentials_Link"><a id="credentials" href="#Credentials"
+                        onclick=credenTials(this)>Credentials</a></li>
+                <li class="navlink gallery_Link"><a id="gallery" href="#Gallery" onclick=Gallery(this)>Gallery</a>
+                </li>
+                <li class="navlink stair_parts"><a id="stair_parts" href="#Stair_parts"
+                        onclick=stairParts(this)>StairParts</a></li>
+                <li class="navlink contact"><a id="contact" href="#Contact" onclick=Contact(this)>Contact</a></li>
+                <li class="navlink apply_today"><a id="apply_today" href="#Apply_today"
+                        onclick=applyToday(this)>ApplyToday</a></li>
+                <li class="navlink calendar"><a id="Cal" href="#Calendar" onclick=Cdar(this)>Calendar</a></li>
+            </ul>
+
+
+
+
+            <div class="navheader"> <a id="logo-container" href="#Main_Page" class="brand-logo">
+                    campbellsconstruction.com
+                </a>
+            </div>
+
+        </div>
+</body>
+
+</html>

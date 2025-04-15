@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+body{
+    overflow: hidden;
+}
+        section {
+            display: grid;
+            place-content: top center;
+            scroll-snap-type: both mandatory;
+            background-color: #62737c;
+            min-height: 100vmax;
+            scroll-padding-top: 1em;
+            scroll-snap-align: center;
+            font-size: 10vmin;
+            overflow: hidden;
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        #wrapped {
+            counter-reset: books;
+            scroll-snap-type: both mandatory;
+            margin: 0.5em 0 0 0;
+            position: relative;
+            height: 70vh;
+            color: #f0e68c;
+            background-color: #435660;
+            text-align: center;
+            font-size: 5vmin;
+            max-height: 500px;
+            align-content: center;
+            overflow: auto;
+            --space:counter(books);
+        }
+        .book:after{
+            content:var(--space);
+           
+        }
+
+        .book {
+           counter-increment: books;
+            margin: 0 auto;
+            margin-top: 2em;
+            display: grid;
+            place-content: center;
+            padding-bottom: 2em;
+            scroll-padding-top: 2em;
+            scroll-snap-align: center;
+            font-size: 3vmin;
+            width: 300px;
+            margin:0 2em 0 2em;
+
+        }
+
+        .book img {
+            margin: 0 auto;
+            height: 80vmin;
+            max-width: 90%;
+        }
+
+        .header :is(h1, h2, h3, h4, h5, h6, p) {
+            padding: 0.2em;
+            margin: 0;
+        }
+
+        @media only screen and (min-width: 600px) {
+            #wrapped {
+                display: grid;
+                margin: 0em 0 0em 0;
+                width: 90vw;
+            }
+
+            .book {
+                width: 200px;
+            scroll-padding-top: 0em;
+grid-row:1;
+            }
+
+            .book img {
+                margin: 0 auto;
+                width: 100%;
+                height: 30vmin;
+                scroll-padding-top: 0em;
+            }
+
+        }
+    </style>
+</head>
+
+<body style="scroll-snap-type: both mandatory;background:#999">
+    <section>
+        <div class="parallax-container valign-wrapper ">
+
+            <div class="container">
+
+                <div id="Stair_parts" class="stairs hidden">
+                    <div class="stairPartsContainer  ">
+
+                        <div id="primary" class="contentArea">
+
+
+                            <main id="main" class="site-main stairMain">
+
+
+
+
+
+                                <article class="stairparts" id="stairPartsCatalog">
+                                    <header class="header">
+                                        <h1 class="title">StairParts</h1>
+                                        <p style="display:inline;">Stairpart/Moldings</p>
+                                    </header><!-- .entry-header -->
+
+
+                                    <div id="wrapped">
+                                        <div class="book">
+
+                                            <div id="title">
+                                                <a href="https://issuu.com/zanzico/docs/crown-heritage-stair-parts/32"
+                                                    target="_blank" rel="noopener noreferrer"> <img
+                                                        src="https://static.wixstatic.com/media/c5400b_0c4c9cc3a4a847ee996c66225b1b2226.jpg/v1/fill/w_235,h_300,al_c,q_80,usm_0.66_1.00_0.01/c5400b_0c4c9cc3a4a847ee996c66225b1b2226.webp"
+                                                        alt="" data-type="image"> </a>
+                                            </div>
+                                            <div data-packed="false">
+                                                <h5>Crown Heritage</h5>
+                                            </div>
+
+                                        </div>
+                                        <div class="book">
+
+                                            <div class="title" data-is-responsive="false" data-display-mode="fill"
+                                                data-content-padding-horizontal="0" data-content-padding-vertical="0"
+                                                data-exact-height="300">
+                                                <a href="https://www.ljsmith.com/stair-designer/" target="_blank"
+                                                    rel="nofollow noopener noreferrer"
+                                                    data-content="https://www.ljsmith.com/stair-designer/"
+                                                    data-type="external"> <img
+                                                        src="https://static.wixstatic.com/media/c5400b_0a6e3a9fc4054b06a0095842beba1760.jpg/v1/fill/w_240,h_300,al_c,q_80,usm_0.66_1.00_0.01/c5400b_0a6e3a9fc4054b06a0095842beba1760.webp"
+                                                        alt="" data-type="image"> </a>
+
+                                                <div data-packed="false">
+                                                    <h5>L.J Smith</h5>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="book">
+
+                                            <div class="title" data-is-responsive="false" data-display-mode="fill"
+                                                data-content-padding-horizontal="0" data-content-padding-vertical="0"
+                                                data-exact-height="305">
+                                                <a href="https://issuu.com/wausausupplycompany/docs/waudena_stairparts/8"
+                                                    target="_blank" rel="nofollow noopener noreferrer"
+                                                    data-content="https://issuu.com/wausausupplycompany/docs/waudena_stairparts/8"
+                                                    data-type="external"> <img
+                                                        src="https://static.wixstatic.com/media/c5400b_f8ca85be68d44c7782e37df68e0e0e1c.jpg/v1/fill/w_240,h_305,al_c,q_80,usm_0.66_1.00_0.01/c5400b_f8ca85be68d44c7782e37df68e0e0e1c.webp"
+                                                        alt="" data-type="image"> </a>
+
+                                                <div data-packed="false">
+                                                    <h5>Oak Point</h5>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="book">
+
+                                            <div class="title" data-is-responsive="false" data-display-mode="fill"
+                                                data-content-padding-horizontal="0" data-content-padding-vertical="0"
+                                                data-exact-height="271">
+                                                <a href="https://www.fitts.com/catalog" target="_blank"
+                                                    rel="noopener noreferrer"> <img
+                                                        src="https://static.wixstatic.com/media/c5400b_64783b9f45b448e9bb74b1ded22ee133.jpg/v1/fill/w_126,h_175,al_c,lg_1,q_80/c5400b_64783b9f45b448e9bb74b1ded22ee133.webp"
+                                                        alt="" data-type="image"> </a>
+
+                                                <div data-packed="false">
+                                                    <h5>Fitts</h5>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="book">
+
+                                            <div class="title" data-is-responsive="false" data-display-mode="fill"
+                                                data-content-padding-horizontal="0" data-content-padding-vertical="0"
+                                                data-exact-height="280">
+                                                <a href="https://cooper-stairworks.s3.amazonaws.com/uploads/2019/06/Cooper-Stair-Parts-2019.pdf"
+                                                    target="_blank" rel="nofollow noopener noreferrer"
+                                                    data-content="https://cooper-stairworks.s3.amazonaws.com/uploads/2019/06/Cooper-Stair-Parts-2019.pdf"
+                                                    data-type="external"> <img
+                                                        src="https://static.wixstatic.com/media/c5400b_97d973b4ecb949d3a77ced0ea08973d8.jpg/v1/fill/w_126,h_160,al_c,lg_1,q_80/c5400b_97d973b4ecb949d3a77ced0ea08973d8.webp"
+                                                        alt="" data-type="image"> </a>
+
+                                                <div data-packed="false">
+                                                    <h5>Cooper</h5>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="book">
+
+                                            <div class="title" data-is-responsive="false" data-display-mode="fill"
+                                                data-content-padding-horizontal="0" data-content-padding-vertical="0"
+                                                data-exact-height="285">
+                                                <a href="https://houseofforgings.net/wp-content/uploads/2019/10/HF-Catalog-Edition-001-A-Web-HF.pdf"
+                                                    target="_blank" rel="noopener noreferrer"> <img
+                                                        src="https://static.wixstatic.com/media/c5400b_8e3a8022511e47ebb4fa46ab517322df.png/v1/fill/w_225,h_285,al_c,q_85,usm_0.66_1.00_0.01/c5400b_8e3a8022511e47ebb4fa46ab517322df.webp"
+                                                        alt="" data-type="image"> </a>
+
+                                                <div data-packed="false">
+                                                    <h5>House of forging</h5>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="book">
+
+                                            <div class="title" data-is-responsive="false" data-display-mode="fill"
+                                                data-content-padding-horizontal="8" data-content-padding-vertical="8"
+                                                data-exact-height="232"><a
+                                                    href="http://www.carolinastair.com/cms/uploads/carolina-wood-and-iron-2019-pages.pdf"
+                                                    target="_blank" rel="nofollow noopener noreferrer"
+                                                    data-content="http://www.carolinastair.com/cms/uploads/carolina-wood-and-iron-2019-pages.pdf"
+                                                    data-type="external"> <img
+                                                        src="https://static.wixstatic.com/media/c5400b_a53fbd3e962d462b8018ebfbd27bf1b4.png/v1/fill/w_297,h_224,al_c,lg_1,q_85/c5400b_a53fbd3e962d462b8018ebfbd27bf1b4.webp"
+                                                        alt="" data-type="image"></a>
+
+                                                <div data-packed="false">
+                                                    <h5>CAROLINA</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="book">
+
+                                            <div class="title" data-is-responsive="false" data-display-mode="fill"
+                                                data-content-padding-horizontal="0" data-content-padding-vertical="0"
+                                                data-exact-height="290">
+                                                <a href="https://www.idealstairparts.com/catalog/" target="_blank"
+                                                    rel="nofollow noopener noreferrer"
+                                                    data-content="https://www.idealstairparts.com/catalog/"
+                                                    data-type="external"> <img
+                                                        src="https://static.wixstatic.com/media/c5400b_785333cf4ecd4c61a44e57aaf1321b19.jpg/v1/fill/w_225,h_290,al_c,q_80,usm_0.66_1.00_0.01/c5400b_785333cf4ecd4c61a44e57aaf1321b19.webp"
+                                                        alt="" data-type="image"> </a>
+
+                                                <div data-packed="false">
+                                                    <h5>IDEAL</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div><!-- .entry-content .clear -->
+
+                                </article><!-- #stairParts -->
+                            </main><!-- #main -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

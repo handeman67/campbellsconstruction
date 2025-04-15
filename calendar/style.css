@@ -1,0 +1,139 @@
+
+#calendar {
+  display: grid;
+  place-content: center;
+  background: #0009;
+  z-index: 100;
+  
+}
+.cals {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  background:#0009;
+}
+.contactform{
+  margin:2rem;
+}
+#calevent {
+  color: #cac;
+  background: #000c;
+  padding: 0.5rem;
+
+  overflow-y: auto;
+}
+.span {
+  cursor: pointer;
+  text-decoration: none;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+}
+.head_cal th {
+  box-shadow: -1px -1px 5px #cac5, 1px 1px 5px #000;
+  background: #0002;
+  background-image: var(--img);
+  text-align: left;
+  padding: 0.5rem;
+  height:30vh;
+}
+table {
+  color: bisque;
+  table-layout: relative;
+  margin: 2px auto;
+}
+td:hover:active {
+  color: #0f0;
+
+  box-shadow: inset -0.5px -0.5px 5px #cac9, inset 1px 1px 5px #000;
+}
+
+td:hover {
+  background: #0002;
+  color: yellowgreen;
+}
+
+td {
+  margin: 2%;
+  line-height: 2rem;
+  text-align: center;
+  text-shadow: 0 0 5px 5px #000;
+  border: 3px solid #000;
+  box-shadow: inset -0.5px -0.5px 5px #000, inset 0.5px 0.5px 5px #cac;
+}
+.white-cal {
+  border: 1px solid #000;
+  box-shadow: -1px -1px 5px #cac5, 1px 1px 5px #000;
+}
+.week_event {
+  border: 1px solid #fc0;
+  box-shadow: -1px -1px 5px #cac5, 1px 1px 5px #000;
+  background: #0005;
+  color: #fc0;
+}
+.subhead_cal {
+  border: 1px solid #cac;
+  box-shadow: inset -0.5px -0.5px 5px #cac9;
+  background: linear-gradient(
+    to right,
+    transparent,
+    #cac5,
+    transparent,
+    #cac5,
+    transparent
+  );
+}
+.week_cal {
+  background: transparent;
+  border: 1px solid #cac;
+}
+.themelt{
+  width:100%;
+  margin:0;
+padding:0;
+}
+.today_cal {
+  border: 1px solid #fc0;
+  box-shadow: -1px -1px 5px #cac5, 1px 1px 5px #000;
+  background: #0005;
+  font-size: 1.5rem;
+  color: #fc0;
+}
+.days_cal {
+  border: 2px solid #000;
+  box-shadow: -1px -1px 5px #cac5, 1px 1px 5px #000;
+}
+#close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  background: transparent;
+  color: #fff;
+}
+h1{
+  padding:1rem;
+}
+.result {
+}
+#xx {
+  cursor: pointer;
+  font-size: clamp(0.5rem, 16px, 1rem);
+}
+a {
+  padding: 1rem;
+}
+.x {
+  cursor: grab;
+}
+p {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+@keyframes slide {
+  to {
+    background-position-x: 100vw;
+  }
+}

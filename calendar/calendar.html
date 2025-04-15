@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="calendar">
+    
+    <title>Calendar</title>
+    <style>
+     
+
+      body{
+        --s: 105px; /* control the size */
+  --c1: #b9b9b9;
+  --c2: #dcdcdc;
+  --c3: #fafafa;
+
+  background:
+    conic-gradient(from 75deg,var(--c1)   15deg ,var(--c2) 0 30deg ,#0000 0 180deg,
+                              var(--c2) 0 195deg,var(--c1) 0 210deg,#0000 0) 
+       calc(0.5*var(--s)) calc(0.5*var(--s)/0.577),
+    conic-gradient(var(--c1)   30deg ,var(--c3) 0 75deg ,var(--c1) 0 90deg, var(--c2) 0 105deg,
+                   var(--c3) 0 150deg,var(--c2) 0 180deg,var(--c3) 0 210deg,var(--c1) 0 256deg,
+                   var(--c2) 0 270deg,var(--c1) 0 286deg,var(--c2) 0 331deg,var(--c3) 0);
+  background-size: var(--s) calc(var(--s)/0.577);
+  /* 0.577=tan(30deg)*/
+
+      }
+      section{
+        margin:0 auto;
+      max-width: 800px;
+      }
+      .today_cal{
+        box-shadow:inset 0 0 15px 0 #ccc;
+        padding:5px;
+        border-radius:50%;
+      }
+      .week_cal{
+        background: #222;
+      }
+      .week_event{
+        box-shadow:inset 0 0 15px 0 #ccc;
+      }
+      .days_cal{
+        background: #222;
+      }
+      .white_cal{
+        background: transparent;
+      }
+      .calwrap{
+        display: flex;
+        flex-direction: column;
+        color: khaki;
+        background-color: #6d695c;
+background-image:
+repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+background-size: 70vw 120vh;}
+      #calendar table{
+        margin: 0px auto;
+        border:1px solid goldenrod;
+        padding: 1vmin;
+        font-size:2.5vmax;
+        box-shadow: 0 0 15px 0 #000;
+        border-radius: 5px;
+
+      }
+      #calendar td{
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid #000;
+        padding:1vmin;
+        
+      }
+      #calendar td:hover{
+          color: #000;
+      border: 1px solid #0c0;
+      font-weight:900 ;
+      background: goldenrod;
+
+      } 
+      #calendar td:active{
+   font-size: 2vmax;
+      font-weight:900 ;
+    
+
+      }
+
+      tr:nth-child(1):hover{
+        background: #cfc;
+      }
+      tr:nth-child(2):hover{
+        background: #cfc;
+      }
+      tr:nth-child(3):hover{
+        background: #cfc;
+      }
+      tr:nth-child(4):hover{
+        background: #cfc;
+      }
+      tr:nth-child(5):hover{
+        background: #cfc;
+      }
+      #calevent{
+        cursor: pointer;
+        padding: 1em;
+      }
+    </style>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+
+    <body>
+    <section>
+      <div class="calwrap">
+        <h1>Check your schedule</h1>
+ <div id="calendar"></div>
+        
+        <div id="calevent"></div>
+       
+      </div>
+    </section>
+</body>
+<script src="../calendar/index.js"></script>
+</html>

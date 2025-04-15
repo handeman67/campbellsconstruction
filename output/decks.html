@@ -1,0 +1,129 @@
+
+    <html>
+    <head>
+    
+        <title>Decks Images</title>
+        <style>
+        body {
+        margin:25px 0;
+            background-color: #708474;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+        .grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            max-width: 600px;
+        }
+        input {
+            width: 10px;
+            height: 10px;
+            display: none;
+        }
+        label {
+            display: grid;
+            place-content: center;
+            border: 2px solid #0ff;
+        }
+        input:checked + label {
+            background: #000c;
+            position: fixed;
+            inset: 10px;
+            border-color: blue;
+        }
+        input:checked + label img {
+            width: 100%;
+        }
+        button{
+         position:fixed;
+         top:10px;
+         right:10%;
+         transform:translate(-50%,0);
+         color: khaki;
+         background:#2225;
+         padding:2px;
+        }
+        @media only screen and (max-width: 650px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        h1{
+        position:fixed;
+        top:20px;
+        color: khaki;
+        }
+        </style>
+        
+    </head>
+    <body>
+    
+     <button onclick="window.history.back()">Go back!</button>
+        <h1>Decks</h1>
+        <div class="grid">
+    
+            <input type="checkbox" id="check0">
+            <label for="check0">
+                <div class="imagcontainer">
+                <img src="..\./img/decks\313965648_554014093399786_4936222348413513832_n.jpg" alt="313965648_554014093399786_4936222348413513832_n.jpg">
+                </div>
+            </label>
+        
+            <input type="checkbox" id="check1">
+            <label for="check1">
+                <div class="imagcontainer">
+                <img src="..\./img/decks\314937580_554014090066453_1155191509274365495_n.jpg" alt="314937580_554014090066453_1155191509274365495_n.jpg">
+                </div>
+            </label>
+        
+            <input type="checkbox" id="check2">
+            <label for="check2">
+                <div class="imagcontainer">
+                <img src="..\./img/decks\315021124_554014096733119_636340509153123739_n.jpg" alt="315021124_554014096733119_636340509153123739_n.jpg">
+                </div>
+            </label>
+        
+            <input type="checkbox" id="check3">
+            <label for="check3">
+                <div class="imagcontainer">
+                <img src="..\./img/decks\58.jpg" alt="58.jpg">
+                </div>
+            </label>
+        
+            <input type="checkbox" id="check4">
+            <label for="check4">
+                <div class="imagcontainer">
+                <img src="..\./img/decks\c1dc67d77c15398b22ca27cfd7238b0e.jpg" alt="c1dc67d77c15398b22ca27cfd7238b0e.jpg">
+                </div>
+            </label>
+        
+            <input type="checkbox" id="check5">
+            <label for="check5">
+                <div class="imagcontainer">
+                <img src="..\./img/decks\Deck-Stairs.jpg" alt="Deck-Stairs.jpg">
+                </div>
+            </label>
+        
+            <input type="checkbox" id="check6">
+            <label for="check6">
+                <div class="imagcontainer">
+                <img src="..\./img/decks\Octagon.jpg" alt="Octagon.jpg">
+                </div>
+            </label>
+        
+            <input type="checkbox" id="check7">
+            <label for="check7">
+                <div class="imagcontainer">
+                <img src="..\./img/decks\stair system.gif" alt="stair system.gif">
+                </div>
+            </label>
+        
+        </div>
+    </a>
+    </html>
+    

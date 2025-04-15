@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        background: #cfc;
+        padding: 1vmin;
+        margin: 1em auto;
+        max-width: 800px;
+        
+    }
+
+    #card1{
+        display: grid;
+        grid-template-rows: reapeat(1fr, 3);
+        grid-gap: 0.5em;
+    }
+
+    .col {
+        display: block;
+        padding: 1em;
+        background: #cac;
+        text-align: center;
+        grid-row: 1;
+    }
+    @media only screen and (max-width: 400px){
+	#card1{
+        grid-template-columns: reapeat(1fr, 3);
+        grid-template-rows: reapeat(1fr, 3);
+
+    }
+    .col{
+        grid-column: 1;
+        grid-row: auto;
+    }
+}
+</style>
+
+<body>
+    <section>
+        <div class="container">
+
+            <div id="card1" class="section ">
+
+                <!--   Icon Section   -->
+
+                <div class="col  m4">
+                    <div class="icon-block orange-text">
+                        <h1 class="center "><i class="icons">&#128077;</i></h1>
+                        <h3 class="center">Professional Quality Craftsmanship</h3>
+
+                        <p class="light">We do the heavy lifting for you, We help you work out your design, We work
+                            your
+                            design, We bring your design to completion.</p>
+                    </div>
+                </div>
+
+                <div class="col  m4">
+                    <div class="icon-block orange-text">
+                        <h1 class="center"><i class="icons2">&#127960</i></h1>
+                        <h3 class="center">Contracting and Sub-Contracting</h3>
+
+                        <p class="light">Weather your looking for a Contractor to run your project or your just
+                            looking
+                            to sub out parts of the project.Give us a call</p>
+                    </div>
+                </div>
+
+                <div class="col  m4">
+                    <div class="icon-block orange-text">
+                        <h1 class="center"><i class="icons3">&#128220</i></h1>
+                        <h3 class="center">Experienced Design and Consulting</h3>
+
+                        <p class="light">Are you looking to talk to a designer, to help you through your design
+                            ideas or
+                            come up with some new ones. We can help, we work some of new englands best designers</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

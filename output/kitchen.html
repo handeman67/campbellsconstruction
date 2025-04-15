@@ -1,0 +1,122 @@
+
+    <html>
+    <head>
+    
+        <title>Kitchen Images</title>
+        <style>
+        body {
+        margin:25px 0;
+            background-color: #708474;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+        .grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            max-width: 600px;
+        }
+        input {
+            width: 10px;
+            height: 10px;
+            display: none;
+        }
+        label {
+            display: grid;
+            place-content: center;
+            border: 2px solid #0ff;
+        }
+        input:checked + label {
+            background: #000c;
+            position: fixed;
+            inset: 10px;
+            border-color: blue;
+        }
+        input:checked + label img {
+            width: 100%;
+        }
+        button{
+         position:fixed;
+         top:10px;
+         right:10%;
+         transform:translate(-50%,0);
+         color: khaki;
+         background:#2225;
+         padding:2px;
+        }
+        @media only screen and (max-width: 650px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        h1{
+        position:fixed;
+        top:20px;
+        color: khaki;
+        }
+        </style>
+        
+    </head>
+    <body>
+    
+     <button onclick="window.history.back()">Go back!</button>
+        <h1>Kitchen</h1>
+        <div class="grid">
+    
+            <input type="checkbox" id="check0">
+            <label for="check0">
+                <div class="imagcontainer">
+                <img src="..\./img/kitchen\278881864_1697020173977817_6511350700744417715_n.jpg" alt="278881864_1697020173977817_6511350700744417715_n.jpg">
+                </div>
+            </label>
+        
+            <input type="checkbox" id="check1">
+            <label for="check1">
+                <div class="imagcontainer">
+                <img src="..\./img/kitchen\278918019_1697020177311150_621428941388033800_n.jpg" alt="278918019_1697020177311150_621428941388033800_n.jpg">
+                </div>
+            </label>
+        
+            <input type="checkbox" id="check2">
+            <label for="check2">
+                <div class="imagcontainer">
+                <img src="..\./img/kitchen\305801786_502990045168858_1472164418446764148_n - Copy.jpg" alt="305801786_502990045168858_1472164418446764148_n - Copy.jpg">
+                </div>
+            </label>
+        
+            <input type="checkbox" id="check3">
+            <label for="check3">
+                <div class="imagcontainer">
+                <img src="..\./img/kitchen\305801786_502990045168858_1472164418446764148_n.jpg" alt="305801786_502990045168858_1472164418446764148_n.jpg">
+                </div>
+            </label>
+        
+            <input type="checkbox" id="check4">
+            <label for="check4">
+                <div class="imagcontainer">
+                <img src="..\./img/kitchen\305966410_502990048502191_3344397523033362795_n.jpg" alt="305966410_502990048502191_3344397523033362795_n.jpg">
+                </div>
+            </label>
+        
+            <input type="checkbox" id="check5">
+            <label for="check5">
+                <div class="imagcontainer">
+                <img src="..\./img/kitchen\307285808_502990041835525_1711834058332276089_n.jpg" alt="307285808_502990041835525_1711834058332276089_n.jpg">
+                </div>
+            </label>
+        
+            <input type="checkbox" id="check6">
+            <label for="check6">
+                <div class="imagcontainer">
+                <img src="..\./img/kitchen\kitchenCountryOak.jpg" alt="kitchenCountryOak.jpg">
+                </div>
+            </label>
+        
+        </div>
+    </a>
+    </html>
+    
